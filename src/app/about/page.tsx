@@ -1,24 +1,31 @@
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { Skillset } from "@/components/Skillset";
 import { Section } from "@/layouts/Section";
 
-export default function About() {
-    return (
-        <main className="space-y-10">
-            <Header />
-            <Section
-                title="About me"
-            >
-                <p className="leading-7">
-                    Tenho 4 anos de experiência na área de desenvolvimento web,
-                    tendo já criado diversos aplicativos como soluções para demandas.
-                    Sou ávido em aprender conceitos novos, principalmente em minha área de atuação como desenvolvedor.
-                    Constantemente busco aprimorar minha capacidade de aprender assuntos e adquirir novas habilidades por meio de desafios,
-                    o que me proporcionou um vasto repertório de projetos em que tive que realizar com conceitos
-                    até então inexplorados por mim.
-                </p>
-            </Section>
-            <Footer />
-        </main>
-    )
+export default async function About() {
+  return (
+    <main className="space-y-10">
+      <Header />
+      <Section title="About me" className="px-6">
+        <p className="text-center leading-7">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, rem.
+          Voluptates ducimus consequatur atque in, veniam voluptate, blanditiis
+          repudiandae doloribus amet debitis consequuntur esse aliquam ut
+          corporis quas iste temporibus?
+        </p>
+      </Section>
+      <Skillset />
+      <Section title="Work Experience" className="px-6">
+        <div className="flex">
+          <div className="h-[400px] w-1 bg-white rounded-full" />
+          <section className="flex">
+            <div className="size-4 bg-white rounded-full ring-4 ring-white ring-offset-4 ring-offset-dark -translate-x-[60%]" />
+            <p>work experience</p>
+          </section>
+        </div>
+      </Section>
+      <Footer />
+    </main>
+  );
 }
