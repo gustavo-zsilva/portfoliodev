@@ -1,15 +1,16 @@
-import { ComponentType } from "react"
-import { IconBaseProps } from 'react-icons'
+import { ComponentType } from "react";
+import { IconBaseProps } from "react-icons";
 
 type SkillBoxProps = {
-    title: string,
-    Icon: ComponentType<IconBaseProps>,
-    iconSize?: number,
-}
+  title: string;
+  Icon: ComponentType<IconBaseProps>;
+  iconSize?: number;
+};
 
 export function SkillBox({ title, Icon, iconSize }: SkillBoxProps) {
-    return (
-        <div className="
+  return (
+    <div
+      className="
             flex
             flex-col
             justify-center
@@ -23,11 +24,10 @@ export function SkillBox({ title, Icon, iconSize }: SkillBoxProps) {
             bg-sky-600
             bg-opacity-10
             rounded-lg
-        ">
-            <Icon size={iconSize} />
-            <span className="text-sm">
-                {title}
-            </span>
-        </div>
-    )
+        "
+    >
+      <Icon size={iconSize} />
+      <span className="text-sm">{title}</span>
+    </div>
+  );
 }
