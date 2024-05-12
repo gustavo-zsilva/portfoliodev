@@ -14,7 +14,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${poppins.className} bg-dark`}>
+      <body className={`
+        ${poppins.className}
+        flex
+        min-h-screen
+        gap-10
+        flex-col
+        items-center
+        px-4
+        text-white
+        bg-dark
+      `}>
         {children}
       </body>
     </html>
