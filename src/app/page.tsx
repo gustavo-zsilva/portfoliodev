@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen gap-10 flex-col items-center px-4 text-white">
+    <main>
       <Header />
       <Main />
       <Techs />
