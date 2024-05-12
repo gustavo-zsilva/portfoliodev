@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { poppins } from '@/utils/fonts'
+import { poppins } from "@/utils/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,7 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`
+      <body
+        className={`
         ${poppins.className}
         flex
         flex-col
@@ -23,7 +24,8 @@ export default function RootLayout({
         px-4
         text-white
         bg-dark
-      `}>
+      `}
+      >
         {children}
       </body>
     </html>
