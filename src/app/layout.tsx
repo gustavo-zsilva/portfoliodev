@@ -17,10 +17,9 @@ export default function RootLayout({
       <body className={`
         ${poppins.className}
         flex
-        min-h-screen
-        gap-10
         flex-col
         items-center
+        min-h-screen
         px-4
         text-white
         bg-dark
