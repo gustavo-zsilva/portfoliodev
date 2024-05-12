@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main>
+    <main className="space-y-10">
       <Header />
       <Main />
       <Techs />
