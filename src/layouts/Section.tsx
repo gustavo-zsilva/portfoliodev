@@ -3,7 +3,7 @@ import { twMerge } from 'tailwind-merge'
 
 type SectionProps = ComponentProps<'section'> & {
     title: string,
-    subtitle: string,
+    subtitle?: string,
 }
 
 export function Section({ children, title, subtitle, className, ...props }: SectionProps) {
