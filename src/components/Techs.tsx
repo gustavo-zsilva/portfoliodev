@@ -20,7 +20,7 @@ export async function Techs() {
                         className="flex flex-col items-center gap-2"
                     >
                         <StackIcon name={iconCode} className="w-[45px]" />
-                        <span className="uppercase text-sm opacity-75">{name}</span>
+                        <span className="uppercase text-sm text-light-gray">{name}</span>
                     </div>
                 ))}
             </div>
