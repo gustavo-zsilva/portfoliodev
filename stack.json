@@ -1,14 +1,82 @@
-{
-    "React": "reactjs",
-    "NextJS": "nextjs",
-    "Typescript": "typescript",
-    "Javascript": "js",
-    "HTML5": "html5",
-    "CSS": "css3",
-    "TailwindCSS": "tailwindcss",
-    "GraphQL": "graphql",
-    "Linux": "linux",
-    "Git": "git",
-    "Github": "github",
-    "NodeJS": "nodejs"
-}
+[
+  {
+    "name": "React",
+    "iconName": "reactjs",
+    "experience": 4
+  },
+  {
+    "name": "NextJS",
+    "iconName": "nextjs",
+    "experience": 4
+  },
+  {
+    "name": "Typescript",
+    "iconName": "typescript",
+    "experience": 4
+  },
+  {
+    "name": "Javascript",
+    "iconName": "js",
+    "experience": 4
+  },
+  {
+    "name": "HTML5",
+    "iconName": "html5",
+    "experience": 4
+  },
+  {
+    "name": "CSS",
+    "iconName": "css3",
+    "experience": 4
+  },
+  {
+    "name": "TailwindCSS",
+    "iconName": "tailwindcss",
+    "experience": 4
+  },
+  {
+    "name": "GraphQL",
+    "iconName": "graphql",
+    "experience": 2
+  },
+  {
+    "name": "Linux",
+    "iconName": "linux",
+    "experience": 3
+  },
+  {
+    "name": "Git",
+    "iconName": "git",
+    "experience": 3
+  },
+  {
+    "name": "Github",
+    "iconName": "github",
+    "experience": 3
+  },
+  {
+    "name": "NodeJS",
+    "iconName": "nodejs",
+    "experience": 2
+  },
+  {
+    "name": "React Query",
+    "iconName": "reactquery",
+    "experience": 2
+  },
+  {
+    "name": "Figma",
+    "iconName": "figma",
+    "experience": 3
+  },
+  {
+    "name": "VSCode",
+    "iconName": "vscode",
+    "experience": 4
+  },
+  {
+    "name": "MongoDB",
+    "iconName": "mongodb",
+    "experience": 1
+  }
+]
