@@ -5,9 +5,9 @@ export function Footer() {
     return (
         <footer className="flex flex-col items-center w-full gap-6 pb-10">
             <div className="flex items-center gap-4 w-full">
-                <div className="size-0.5 flex flex-1 bg-white rounded-full" />
+                <div className="size-0.5 flex flex-1 bg-light-gray rounded-full" />
                 <Socials />
-                <div className="size-0.5 flex flex-1 bg-white rounded-full" />
+                <div className="size-0.5 flex flex-1 bg-light-gray rounded-full" />
             </div>
 
             <div className="text-center">
