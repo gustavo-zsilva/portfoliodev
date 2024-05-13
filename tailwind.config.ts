@@ -27,6 +27,9 @@ const config: Config = {
           to: { transform: "translateX(-100%)" },
         },
       },
+      boxShadow: {
+        glow: "0px 0px 8px 8px",
+      },
     },
   },
   plugins: [],
