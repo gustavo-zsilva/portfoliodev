@@ -31,7 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Este projeto foi feito para servir de portfolio e/ou landing page para me apresentar.
 
 - [x] Finalizar Home page
-- [ ] Finalizar About page
+- [x] Finalizar About page
 - [ ] Finalizar Contact page
 - [ ] Arrumar links
 - [ ] Design responsivo
