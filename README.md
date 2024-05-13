@@ -1,39 +1,54 @@
-# portfoliodev
-My refined repo.
+<h1 align="center">Portfolio DEV</h1>
+<p align="center">Meu portfolio de desenvolvedor web, para aqueles que querem conhecer mais sobre mim.</p>
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-## Getting Started
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+</p>
 
-First, run the development server:
+<p align="center">
+  <img alt="projeto PortfolioDEV" src=".github/preview.png" width="100%">
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tecnologias
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- NextJS v14
+- TailwindCSS
+- Typescript
+- Git e Github
+- Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 💻 Projeto
 
-## Learn More
+Este projeto foi feito para servir de portfolio e/ou landing page para me apresentar.
 
-To learn more about Next.js, take a look at the following resources:
+- [x] Finalizar Home page
+- [ ] Finalizar About page
+- [ ] Finalizar Contact page
+- [ ] Arrumar links
+- [ ] Design responsivo
+- [ ] Dark mode / light mode
+- [ ] Animações
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Acesse o projeto finalizado, online (projeto não hospedado ainda)](#)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🔖 Layout
 
-## Deploy on Vercel
+Não há um arquivo de layout para o projeto.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## :memo: Licença
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Esse projeto está sob a licença MIT.
+
+---
+
+Feito por Gustavo Zonta :wave:
+
