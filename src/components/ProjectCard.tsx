@@ -20,8 +20,6 @@ type ProjectCardProps = {
 };
 
 export function ProjectCard({ repo }: ProjectCardProps) {
-  const primaryLanguageColor = `bg-[${repo.primaryLanguage.color}]`;
-
   return (
     <div className="bg-gradient-to-br from-pink to-baby-blue rounded-xl transition-all hover:p-0.5 hover:rounded-lg">
       <ExternalLink
@@ -38,11 +36,13 @@ export function ProjectCard({ repo }: ProjectCardProps) {
           <div className="flex items-center gap-4">
             <div
               className={`
-                            ${primaryLanguageColor}
                             border
                             size-4
                             rounded-full
                         `}
+              style={{
+                background: repo.primaryLanguage.color,
+              }}
             />
             <span className="text-sm">{repo.primaryLanguage.name}</span>
           </div>
