@@ -20,11 +20,17 @@ const config: Config = {
       },
       animation: {
         "infinite-scroll": "infinite-scroll 25s linear infinite",
+        fade: "fade 1.5s 2 ease-out alternate forwards",
       },
       keyframes: {
         "infinite-scroll": {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
+        },
+        fade: {
+          from: { opacity: "0", scale: "0.9" },
+          "20%": { opacity: "1", scale: "1" },
+          to: { opacity: "1", scale: "1" },
         },
       },
       boxShadow: {
