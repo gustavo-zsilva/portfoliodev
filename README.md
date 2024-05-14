@@ -33,7 +33,7 @@ Este projeto foi feito para servir de portfolio e/ou landing page para me aprese
 - [x] Finalizar Home page
 - [x] Finalizar About page
 - [ ] Finalizar Contact page
-- [ ] Arrumar links
+- [x] Arrumar links
 - [ ] Design responsivo
 - [ ] Dark mode / light mode
 - [ ] Animações
