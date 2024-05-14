@@ -10,7 +10,7 @@ import { SkillBox } from "./SkillBox";
 
 export function HowIWork() {
   return (
-    <Section title="How I Work" className="px-6">
+    <Section title="How I Work" className="px-6" id="how-i-work">
       <p className="text-center leading-7">
         My approach to web development blends{" "}
         <span className="bg-yellow-300 bg-opacity-20">
