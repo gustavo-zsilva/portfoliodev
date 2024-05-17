@@ -1,21 +1,11 @@
-"use client";
-
 import Image from "next/image";
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
 
 import { Socials } from "./Socials";
+import { Navigation } from "./Navigation";
 
 export function Header() {
-  const pathname = usePathname();
-  const router = useRouter();
-
-  function redirectToSection(elementId: string) {
-    router.push(`/${elementId}`);
-  }
-
   return (
-    <header className="w-full flex flex-col items-center px-4">
+    <header className="w-full flex flex-col lg:flex-row items-center px-4 lg:justify-between">
       <Image
         src="/images/logo-dark.png"
         alt="Logo"
@@ -23,31 +13,8 @@ export function Header() {
         height={90}
         priority
       />
-      <nav className="flex flex-wrap gap-x-10 gap-y-2 justify-center">
-        <Link href="/" className={`${pathname === "/" && "font-semibold"}`}>
-          Home
-        </Link>
-        <Link
-          href="/about"
-          className={`${pathname === "/about" && "font-semibold"}`}
-        >
-          About
-        </Link>
-        <button onClick={() => redirectToSection("#tech-stacks")}>
-          Tech Stack
-        </button>
-        <button onClick={() => redirectToSection("#how-i-work")}>
-          How I Work
-        </button>
-        <button onClick={() => redirectToSection("#projects")}>Projects</button>
-        <Link
-          href="/contact"
-          className={`${pathname === "/contact" && "font-semibold"}`}
-        >
-          Contact
-        </Link>
-      </nav>
-      <Socials className="mt-4" />
+      <Navigation />
+      <Socials className="mt-4 lg:m-0" />
     </header>
   );
 }

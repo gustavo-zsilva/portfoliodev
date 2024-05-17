@@ -30,7 +30,7 @@ export function Contact() {
   return (
     <Section
       title="Let's build an awesome project together!"
-      className="bg-[url(/images/contact-bg-dark.png)] bg-cover"
+      className="bg-[url(/images/contact-bg-dark.png)] bg-cover bg-no-repeat bg-center md:bg-contain"
     >
       <div className="text-center space-y-4 [&_a]:inline-flex [&_a]:items-center [&_a]:gap-2">
         <p>To hire me, please contact me via email</p>
@@ -47,7 +47,7 @@ export function Contact() {
 
         <p>Also:</p>
 
-        <div className="space-y-6">
+        <div className="space-y-6 flex flex-col items-center sm:space-y-0 sm:space-x-6 sm:flex-row sm:justify-center">
           <a
             href="/files/cv.pdf"
             download

@@ -21,9 +21,12 @@ export default function RootLayout({
         flex-col
         items-center
         min-h-screen
+        max-w-[1024px]
         px-4
         text-white
         bg-dark
+        lg:m-auto
+        lg:px-0
       `}
       >
         {children}

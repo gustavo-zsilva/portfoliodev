@@ -26,7 +26,7 @@ export async function Projects() {
       subtitle="Some of my best creations"
       id="projects"
     >
-      <ul className="space-y-6">
+      <ul className="space-y-6 sm:grid sm:grid-cols-2 sm:space-y-0 sm:gap-6 md:grid-cols-3">
         {pinnedRepos.map((repo) => (
           <ProjectCard key={repo.id} repo={repo} />
         ))}

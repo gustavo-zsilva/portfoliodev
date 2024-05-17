@@ -18,9 +18,12 @@ export async function Techs() {
       subtitle="Technologies I most use"
       id="tech-stacks"
     >
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-3 gap-6 sm:flex sm:flex-wrap sm:justify-center sm:px-12 lg:px-0">
         {techList.map(({ name, iconName }) => (
-          <div key={iconName} className="flex flex-col items-center gap-2">
+          <div
+            key={iconName}
+            className="flex flex-col items-center gap-2 sm:w-24"
+          >
             <StackIcon name={iconName} className="w-[45px]" />
             <span className="uppercase text-sm text-light-gray">{name}</span>
           </div>

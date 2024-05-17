@@ -8,7 +8,7 @@ type ExperienceProps = {
 
 export function ExperienceSection({ children, title, year }: ExperienceProps) {
   return (
-    <section className="flex items-center gap-6">
+    <section className="flex gap-6 lg:flex-col lg:flex-1">
       <div
         className="
             min-w-3
@@ -25,6 +25,8 @@ export function ExperienceSection({ children, title, year }: ExperienceProps) {
             shadow-blue-500/90
             flex
             self-start
+            lg:-translate-x-0
+            lg:-translate-y-[70%]
         "
       />
       <main>

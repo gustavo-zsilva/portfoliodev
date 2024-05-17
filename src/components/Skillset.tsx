@@ -24,7 +24,7 @@ export async function Skillset() {
       title="Skillset"
       className="
         w-screen
-        max-w-[750px]
+        max-w-screen-lg
         m-auto
       "
     >

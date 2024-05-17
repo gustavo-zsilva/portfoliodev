@@ -21,7 +21,7 @@ export function HowIWork() {
         collaboration and quality, always striving to enhance my skills and
         outcomes, <b>with an unwavering commitment to excellence.</b>
       </p>
-      <div className="grid grid-cols-2 place-items-center gap-8">
+      <div className="grid grid-cols-2 place-items-center gap-8 md:grid-cols-4">
         <SkillBox Icon={FaRegLightbulb} iconSize={22} title="Inspiration" />
         <SkillBox Icon={FaRegClipboard} iconSize={22} title="Planning" />
         <SkillBox Icon={FaRegPaperPlane} iconSize={22} title="Prototyping" />

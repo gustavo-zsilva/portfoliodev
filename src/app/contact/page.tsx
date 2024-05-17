@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 
 export default function ContactPage() {
   return (
-    <main className="space-y-10 flex flex-col justify-between h-screen">
+    <main className="space-y-10 w-full flex flex-col justify-between h-screen">
       <Header />
       <Contact />
       <Footer />

@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="space-y-10">
+    <main className="space-y-10 md:space-y-20">
       <Header />
       <Main />
       <Techs />

@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default async function About() {
   return (
-    <main className="space-y-10">
+    <main className="space-y-10 md:space-y-20">
       <Header />
       <Section title="About me" className="px-6">
         <p className="text-center leading-7">
@@ -22,7 +22,18 @@ export default async function About() {
       </Section>
       <Skillset />
       <Section title="My Experience" className="px-6">
-        <div className="border-l-4 border-dotted flex flex-col gap-10">
+        <div
+          className="
+            border-l-4
+            border-dotted
+            flex
+            flex-col
+            gap-10
+            lg:flex-row
+            lg:border-l-0
+            lg:border-t-4
+          "
+        >
           <ExperienceSection title="Started Journey" year="2019">
             Started my journey on the dev life, learning C# & Python as my first
             languages

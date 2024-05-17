@@ -24,7 +24,7 @@ export function ProjectCard({ repo }: ProjectCardProps) {
     <div className="bg-gradient-to-br from-pink to-baby-blue rounded-xl transition-all hover:p-0.5 hover:rounded-lg">
       <ExternalLink
         href={repo.url}
-        className="flex flex-col bg-dark border-[2px] border-light-dark rounded-lg p-4 gap-2"
+        className="flex flex-col bg-dark border-[2px] border-light-dark rounded-lg p-4 gap-2 sm:h-full"
       >
         <header className="flex items-center justify-between">
           <h1 className="text-lg font-semibold">{repo.name}</h1>
