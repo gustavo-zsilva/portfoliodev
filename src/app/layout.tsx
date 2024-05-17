@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { poppins } from "@/utils/fonts";
+import { Providers } from "./providers";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
         className={`
         ${poppins.className}
@@ -23,13 +24,15 @@ export default function RootLayout({
         min-h-screen
         max-w-[1024px]
         px-4
-        text-white
-        bg-dark
+        bg-[#fff]
+        text-black
+        dark:text-blue-50
+        dark:bg-dark
         lg:m-auto
         lg:px-0
       `}
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
