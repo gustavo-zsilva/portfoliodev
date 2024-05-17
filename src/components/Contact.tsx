@@ -73,7 +73,7 @@ export function Contact() {
         >
           <div className="flex items-center gap-4">
             <FaCircleCheck size={22} />
-            <h2>Email copiado com sucesso!</h2>
+            <h2>Email copied successfully!</h2>
           </div>
         </div>
       )}
