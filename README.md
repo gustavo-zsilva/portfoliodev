@@ -37,6 +37,7 @@ Este projeto foi feito para servir de portfolio e/ou landing page para me aprese
 - [ ] Design responsivo
 - [ ] Dark mode / light mode
 - [ ] Animações
+- [ ] Checar acessibilidade
 
 - [Acesse o projeto finalizado, online (projeto não hospedado ainda)](#)
 
