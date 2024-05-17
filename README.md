@@ -34,9 +34,10 @@ Este projeto foi feito para servir de portfolio e/ou landing page para me aprese
 - [x] Finalizar About page
 - [x] Finalizar Contact page
 - [x] Arrumar links
-- [ ] Design responsivo
+- [x] Design responsivo
 - [ ] Dark mode / light mode
 - [ ] Animações
+- [ ] Checar acessibilidade
 
 - [Acesse o projeto finalizado, online (projeto não hospedado ainda)](#)
 
