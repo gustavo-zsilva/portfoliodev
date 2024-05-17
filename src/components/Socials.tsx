@@ -13,19 +13,19 @@ export function Socials({ className, size = 24 }: SocialsProps) {
     <div className={twMerge("flex gap-4", className)}>
       <ExternalLink
         href="https://github.com/gustavo-zsilva"
-        className="p-3 bg-light-dark rounded-full m-auto"
+        className="p-3 bg-light dark:bg-light-dark rounded-full m-auto"
       >
         <FaGithub size={size} />
       </ExternalLink>
       <ExternalLink
         href="https://www.linkedin.com/in/gustavo-zsilva/"
-        className="p-3 bg-light-dark rounded-full m-auto"
+        className="p-3 bg-light dark:bg-light-dark rounded-full m-auto"
       >
         <FaLinkedinIn size={size} />
       </ExternalLink>
       <ExternalLink
         href="https://www.instagram.com/gustavo.zslv/"
-        className="p-3 bg-light-dark rounded-full m-auto"
+        className="p-3 bg-light dark:bg-light-dark rounded-full m-auto"
       >
         <FaInstagram size={size} />
       </ExternalLink>

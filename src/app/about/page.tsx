@@ -57,6 +57,7 @@ export default async function About() {
                 items-center
                 gap-4
                 bg-blue-500
+                text-white
                 py-2
                 px-6
                 mt-6

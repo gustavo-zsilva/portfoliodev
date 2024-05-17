@@ -16,9 +16,11 @@ export function ExperienceSection({ children, title, year }: ExperienceProps) {
             bg-blue-400
             ring-4
             rounded-full
-            ring-white
+            ring-dark
+            dark:ring-white
             ring-offset-4
-            ring-offset-dark
+            ring-offset-white
+            dark:ring-offset-dark
             -translate-x-[70%]
             translate-y-[50%]
             shadow-glow

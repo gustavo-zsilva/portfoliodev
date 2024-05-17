@@ -30,7 +30,7 @@ export function Contact() {
   return (
     <Section
       title="Let's build an awesome project together!"
-      className="bg-[url(/images/contact-bg-dark.png)] bg-cover bg-no-repeat bg-center md:bg-contain"
+      className="dark:bg-[url(/images/contact-bg-dark.png)] bg-[url(/images/contact-bg-light.png)] bg-cover bg-no-repeat bg-center md:bg-contain"
     >
       <div className="text-center space-y-4 [&_a]:inline-flex [&_a]:items-center [&_a]:gap-2">
         <p>To hire me, please contact me via email</p>
@@ -51,7 +51,7 @@ export function Contact() {
           <a
             href="/files/cv.pdf"
             download
-            className="bg-teal-600 px-6 py-2 rounded-full transition-all hover:bg-teal-500 hover:shadow-lg hover:shadow-teal-200/10 cursor-pointer"
+            className="bg-teal-600 px-6 py-2 rounded-full transition-all hover:bg-teal-500 hover:shadow-lg hover:shadow-teal-200/10 cursor-pointer text-white"
           >
             Download CV
             <FiDownload size={20} />

@@ -1,10 +1,10 @@
-import Image from "next/image";
 import { Socials } from "./Socials";
 import { Navigation } from "./Navigation";
+import { ThemeImage } from "./ThemeImage";
 
 export function Footer() {
   return (
-    <footer className="flex flex-col items-center w-full gap-6 pb-10 text-light-gray">
+    <footer className="flex flex-col items-center w-full gap-6 pb-10 text-light-dark dark:text-light-gray">
       <div className="flex items-center gap-4 w-full">
         <div className="size-0.5 flex flex-1 bg-light-gray rounded-full" />
         <Socials />
@@ -20,9 +20,10 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col items-center md:flex-row-reverse">
-          <Image
-            src="/images/logo-dark.png"
-            alt="logo"
+          <ThemeImage
+            srcLight="/images/logo-light.png"
+            srcDark="/images/logo-dark.png"
+            alt="Logo"
             width={90}
             height={90}
           />

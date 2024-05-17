@@ -10,11 +10,10 @@ export function Main() {
           <Image
             src="https://github.com/gustavo-zsilva.png"
             fill
-            objectFit="cover"
             alt="Profile Picture"
             sizes="(min-width: 1024px) 100vw"
             priority
-            className="rounded-full outline outline-8 outline-dark"
+            className="rounded-full outline outline-8 outline-white dark:outline-dark"
           />
         </div>
       </picture>
@@ -33,11 +32,13 @@ export function Main() {
           </span>
         </div>
 
-        <span className="border border-white text-sm px-4 py-1 rounded-full">
+        <span className="border border-light-dark dark:border-blue-50 text-sm px-4 py-1 rounded-full">
           Florianópolis, Brazil
         </span>
 
-        <p className={`${mono.className} text-sm divide-x-2`}>
+        <p
+          className={`${mono.className} text-sm divide-x-2 divide-light-dark dark:divide-blue-50`}
+        >
           <span className="px-2">Fullstack Developer</span>
           <span className="px-2">Freelancer</span>
         </p>
