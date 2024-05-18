@@ -35,9 +35,11 @@ Este projeto foi feito para servir de portfolio e/ou landing page para me aprese
 - [x] Finalizar Contact page
 - [x] Arrumar links
 - [x] Design responsivo
-- [ ] Dark mode / light mode
+- [x] Dark mode / light mode
 - [ ] Animações
 - [ ] Checar acessibilidade
+- [ ] Adicionar Error Boundaries
+- [ ] Adicionar Suspense API (opcional)
 
 - [Acesse o projeto finalizado, online (projeto não hospedado ainda)](#)
 
