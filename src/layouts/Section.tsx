@@ -1,9 +1,13 @@
-import { ComponentProps } from "react";
-import { twMerge } from "tailwind-merge";
+"use client";
 
-type SectionProps = ComponentProps<"section"> & {
+import { ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
+import { HTMLMotionProps, motion } from "framer-motion";
+
+type SectionProps = HTMLMotionProps<"section"> & {
   title: string;
   subtitle?: string;
+  children: ReactNode;
 };
 
 export function Section({
@@ -14,13 +18,19 @@ export function Section({
   ...props
 }: SectionProps) {
   return (
-    <section className={twMerge("w-full space-y-10", className)} {...props}>
+    <motion.section
+      initial={{ opacity: 0, y: -20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      className={twMerge("w-full space-y-10", className)}
+      {...props}
+    >
       <header className="text-center">
         <h1 className="font-bold text-2xl mb-3">{title}</h1>
         <p className="text-light-gray">{subtitle}</p>
       </header>
 
       {children}
-    </section>
+    </motion.section>
   );
 }
