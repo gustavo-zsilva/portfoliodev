@@ -12,9 +12,8 @@ export function Main() {
 
   return (
     <motion.section
-      initial={{ opacity: 0, y: -20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       className="text-2xl flex flex-col items-center justify-center gap-6 lg:flex-row-reverse lg:justify-between lg:py-20"
     >
       <picture className="bg-red-500 rounded-full p-3 bg-gradient-to-br from-pink to-baby-blue">

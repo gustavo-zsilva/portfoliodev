@@ -12,7 +12,7 @@ export default async function About() {
   return (
     <main className="space-y-10 md:space-y-20">
       <Header />
-      <Section title="About me" className="px-6">
+      <Section title="About me" className="px-6" initial={{ opacity: 0 }}>
         <p className="text-center leading-7">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, rem.
           Voluptates ducimus consequatur atque in, veniam voluptate, blanditiis
