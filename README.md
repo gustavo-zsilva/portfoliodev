@@ -36,7 +36,7 @@ Este projeto foi feito para servir de portfolio e/ou landing page para me aprese
 - [x] Arrumar links
 - [x] Design responsivo
 - [x] Dark mode / light mode
-- [ ] Animações
+- [x] Animações
 - [ ] Checar acessibilidade
 - [ ] Adicionar Error Boundaries
 - [ ] Adicionar Suspense API (opcional)
