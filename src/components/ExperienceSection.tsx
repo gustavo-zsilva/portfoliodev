@@ -1,14 +1,22 @@
-import { ReactNode } from "react";
+"use client";
 
-type ExperienceProps = {
+import { ReactNode } from "react";
+import { HTMLMotionProps, motion } from "framer-motion";
+
+type ExperienceProps = HTMLMotionProps<"section"> & {
   children: ReactNode;
   title: string;
   year: string;
 };
 
-export function ExperienceSection({ children, title, year }: ExperienceProps) {
+export function ExperienceSection({
+  children,
+  title,
+  year,
+  ...props
+}: ExperienceProps) {
   return (
-    <section className="flex gap-6 lg:flex-col lg:flex-1">
+    <motion.section {...props} className="flex gap-6 lg:flex-col lg:flex-1">
       <div
         className="
             min-w-3
@@ -38,6 +46,6 @@ export function ExperienceSection({ children, title, year }: ExperienceProps) {
         </header>
         <div className="mt-4 flex flex-col">{children}</div>
       </main>
-    </section>
+    </motion.section>
   );
 }
