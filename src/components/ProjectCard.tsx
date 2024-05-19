@@ -1,6 +1,7 @@
 import { ExternalLink } from "@/lib/ExternalLink";
 import { MdOutlineStar } from "react-icons/md";
 import { FiArrowUpRight } from "react-icons/fi";
+import { HTMLMotionProps, motion } from "framer-motion";
 
 type PinnedRepo = {
   name: string;
@@ -15,16 +16,19 @@ type PinnedRepo = {
   stargazerCount: number;
 };
 
-type ProjectCardProps = {
+type ProjectCardProps = HTMLMotionProps<"li"> & {
   repo: PinnedRepo;
 };
 
-export function ProjectCard({ repo }: ProjectCardProps) {
+export function ProjectCard({ repo, ...props }: ProjectCardProps) {
   return (
-    <div className="bg-gradient-to-br from-pink to-baby-blue rounded-xl transition-all hover:p-0.5 hover:rounded-lg">
+    <motion.li
+      {...props}
+      className="hover:bg-gradient-to-br hover:from-blue-400 hover:to-blue-600 p-0.5 rounded-lg"
+    >
       <ExternalLink
         href={repo.url}
-        className="flex flex-col bg-white dark:bg-dark border-[2px] border-light-gray border-opacity-20 dark:border-light-dark rounded-lg p-4 gap-2 sm:h-full"
+        className="flex flex-col bg-white dark:bg-dark border-2 border-light-gray border-opacity-20 dark:border-light-dark rounded-lg p-4 gap-2 sm:h-full"
       >
         <header className="flex items-center justify-between">
           <h1 className="text-lg font-semibold">{repo.name}</h1>
@@ -54,6 +58,6 @@ export function ProjectCard({ repo }: ProjectCardProps) {
           </div>
         </footer>
       </ExternalLink>
-    </div>
+    </motion.li>
   );
 }
