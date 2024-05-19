@@ -22,14 +22,14 @@ export default function RootLayout({
         flex-col
         items-center
         min-h-screen
-        max-w-[1024px]
-        px-4
+        max-w-screen-lg
+        px-6
         bg-[#fff]
         text-black
         dark:text-blue-50
         dark:bg-dark
         lg:m-auto
-        lg:px-0
+        xl:px-0
       `}
       >
         <Providers>{children}</Providers>

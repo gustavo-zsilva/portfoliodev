@@ -1,4 +1,6 @@
 import { Section } from "@/layouts/Section";
+import { HighlightedText } from "@/lib/StyledText";
+import { SkillBox } from "./SkillBox";
 
 import {
   FaRegLightbulb,
@@ -6,16 +8,15 @@ import {
   FaRegPaperPlane,
 } from "react-icons/fa";
 import { FaCode } from "react-icons/fa6";
-import { SkillBox } from "./SkillBox";
 
 export function HowIWork() {
   return (
-    <Section title="How I Work" className="px-6" id="how-i-work">
+    <Section title="How I Work" id="how-i-work">
       <p className="text-center leading-7">
         My approach to web development blends{" "}
-        <span className="bg-yellow-300 bg-opacity-20">
+        <HighlightedText>
           deep research, user-centered design, and total commitment.
-        </span>{" "}
+        </HighlightedText>{" "}
         I start with a holistic understanding of the project and focus on
         incremental deliveries to ensure quality and adaptability. I value
         collaboration and quality, always striving to enhance my skills and
