@@ -1,6 +1,11 @@
+"use client";
+
 import { Section } from "@/layouts/Section";
-import { Client } from "get-pinned-repos";
+import { ProjectCardSkeleton } from "@/layouts/ProjectCardSkeleton";
 import { ProjectCard } from "./ProjectCard";
+import { useFetch } from "@/utils/useFetch";
+
+import { motion } from "framer-motion";
 
 type PinnedRepo = {
   name: string;
@@ -15,10 +20,24 @@ type PinnedRepo = {
   stargazerCount: number;
 };
 
-export async function Projects() {
-  Client.setToken(process.env.GITHUB_TOKEN);
-  const pinnedRepos: PinnedRepo[] =
-    await Client.getPinnedRepos("gustavo-zsilva");
+export function Projects() {
+  const { data, isLoading } = useFetch<{ data: PinnedRepo[] }>(
+    "http://localhost:3000/api",
+  );
+  const pinnedRepos = data?.data;
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 5 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.2,
+        duration: 0.2,
+        ease: "easeOut",
+      },
+    }),
+  };
 
   return (
     <Section
@@ -26,11 +45,25 @@ export async function Projects() {
       subtitle="Some of my best creations"
       id="projects"
     >
-      <ul className="space-y-6 sm:grid sm:grid-cols-2 sm:space-y-0 sm:gap-6 md:grid-cols-3">
-        {pinnedRepos.map((repo) => (
-          <ProjectCard key={repo.id} repo={repo} />
-        ))}
-      </ul>
+      <motion.ul
+        initial="hidden"
+        animate="visible"
+        className="space-y-6 sm:grid sm:grid-cols-2 sm:space-y-0 sm:gap-6 md:grid-cols-3"
+      >
+        {isLoading &&
+          [0, 1, 2, 3, 4, 5].map((index) => (
+            <ProjectCardSkeleton key={index} />
+          ))}
+        {!isLoading &&
+          pinnedRepos?.map((repo, index) => (
+            <ProjectCard
+              key={repo.id}
+              repo={repo}
+              custom={index}
+              variants={itemVariants}
+            />
+          ))}
+      </motion.ul>
     </Section>
   );
 }
