@@ -14,9 +14,9 @@ export function Footer() {
       <Navigation className="hidden sm:flex sm:w-full sm:justify-between md:px-10" />
 
       <div className="md:flex md:items-center md:w-full md:justify-between md:px-10">
-        <div className="text-center">
-          <p>+55 48 98847-9786</p>
-          <p>gustavozontadasilva@gmail.com</p>
+        <div className="flex flex-col">
+          <a href="#">+55 48 98847-9786</a>
+          <a href="#">gustavozontadasilva@gmail.com</a>
         </div>
 
         <div className="flex flex-col items-center md:flex-row-reverse">
