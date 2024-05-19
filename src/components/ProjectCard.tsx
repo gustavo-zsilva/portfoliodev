@@ -34,7 +34,7 @@ export function ProjectCard({ repo, ...props }: ProjectCardProps) {
           <h1 className="text-lg font-semibold">{repo.name}</h1>
           <FiArrowUpRight size={22} className="text-baby-blue" />
         </header>
-        <p className="line-clamp-2 text-light-dark dark:text-light-gray">
+        <p className="line-clamp-2 text-light-dark dark:text-light-gray h-full">
           {repo.description}
         </p>
 
