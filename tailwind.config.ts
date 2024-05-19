@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -19,11 +20,11 @@ const config: Config = {
         "light-dark": "#232323",
       },
       animation: {
-        "infinite-scroll": "infinite-scroll 25s linear infinite",
+        infiniteScroll: "infiniteScroll 25s linear infinite",
         fade: "fade 1.5s 2 ease-out alternate forwards",
       },
       keyframes: {
-        "infinite-scroll": {
+        infiniteScroll: {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
         },
@@ -36,9 +37,23 @@ const config: Config = {
       boxShadow: {
         glow: "0px 0px 8px 8px",
       },
+      textShadow: {
+        DEFAULT: "0 2px 8px var(--tw-shadow-color)",
+      },
     },
   },
   darkMode: "class",
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "text-shadow": (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme("textShadow") },
+      );
+    }),
+  ],
 };
 export default config;
