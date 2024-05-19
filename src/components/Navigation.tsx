@@ -23,12 +23,15 @@ export function Navigation({ className }: NavigationProps) {
         className,
       )}
     >
-      <Link href="/" className={`${pathname === "/" && "font-semibold"}`}>
+      <Link
+        href="/"
+        className={`${pathname === "/" && "font-semibold text-shadow shadow-white/20"}`}
+      >
         Home
       </Link>
       <Link
         href="/about"
-        className={`${pathname === "/about" && "font-semibold"}`}
+        className={`${pathname === "/about" && "font-semibold text-shadow shadow-white/20"}`}
       >
         About
       </Link>
@@ -41,7 +44,7 @@ export function Navigation({ className }: NavigationProps) {
       <button onClick={() => redirectToSection("#projects")}>Projects</button>
       <Link
         href="/contact"
-        className={`${pathname === "/contact" && "font-semibold"}`}
+        className={`${pathname === "/contact" && "font-semibold text-shadow shadow-white/20"}`}
       >
         Contact
       </Link>
