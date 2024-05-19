@@ -39,7 +39,7 @@ export async function Skillset() {
           [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]
         "
       >
-        <ul className="flex items-center justify-center md:justify-start gap-4 animate-infinite-scroll">
+        <ul className="flex items-center justify-center md:justify-start gap-4 animate-infiniteScroll">
           {techList.map(({ name, iconName, experience }) => (
             <li key={iconName} className="flex flex-col gap-3 min-w-[10rem]">
               <div className="flex items-center gap-3">
@@ -66,7 +66,7 @@ export async function Skillset() {
           ))}
         </ul>
         <ul
-          className="flex items-center justify-center md:justify-start gap-4 animate-infinite-scroll"
+          className="flex items-center justify-center md:justify-start gap-4 animate-infiniteScroll"
           aria-hidden="true"
         >
           {techList.map(({ name, iconName, experience }) => (
