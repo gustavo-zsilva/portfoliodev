@@ -7,7 +7,7 @@ import { ThemeImage } from "./ThemeImage";
 
 export function Header() {
   return (
-    <header className="w-full flex flex-col lg:flex-row items-center px-4 lg:justify-between">
+    <header className="w-full flex flex-col lg:flex-row items-center lg:justify-between">
       <Link href="/">
         <ThemeImage
           srcLight="/images/logo-light.png"
