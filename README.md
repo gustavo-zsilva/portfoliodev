@@ -41,7 +41,7 @@ Este projeto foi feito para servir de portfolio e/ou landing page para me aprese
 - [ ] Adicionar Error Boundaries
 - [ ] Adicionar Suspense API (opcional)
 
-- [Acesse o projeto finalizado, online (projeto não hospedado ainda)](#)
+- [Acesse o projeto finalizado, online](https://gustavozonta.vercel.app)
 
 ## 🔖 Layout
 
