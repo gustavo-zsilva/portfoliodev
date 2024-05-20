@@ -46,6 +46,10 @@ Este projeto foi feito para servir de portfolio e/ou landing page para me aprese
 ## 🔖 Layout
 
 Não há um arquivo de layout para o projeto.
+Algumas inspirações:
+- [Portfolio Figma Design by @pavanmg007](https://www.figma.com/community/file/1116246660507537002)
+- [Portfolio Design NFT Style by @enricsneelamkavil](https://www.behance.net/gallery/197233379/Developer-Portflio-Design-NFT-Style-Fun-Designs)
+- [Simple Portfolio - Freelancer / Developer by @micahcarroll](https://dribbble.com/shots/15860874-Simple-Portfolio-Freelancer-Developer)
 
 ## :memo: Licença
 
