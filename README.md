@@ -23,6 +23,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - NextJS v14
 - TailwindCSS
 - Typescript
+- Framer Motion
+- SWR
 - Git e Github
 - Vercel
 
