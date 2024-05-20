@@ -21,9 +21,9 @@ type PinnedRepo = {
 };
 
 export function Projects() {
-  const { data, isLoading } = useFetch<{ data: PinnedRepo[] }>(
-    "http://localhost:3000/api",
-  );
+  const url = process.env.NEXT_PUBLIC_URL;
+
+  const { data, isLoading } = useFetch<{ data: PinnedRepo[] }>(`${url}/api`);
   const pinnedRepos = data?.data;
 
   const itemVariants = {
