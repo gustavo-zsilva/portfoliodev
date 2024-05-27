@@ -51,7 +51,7 @@ export function Projects() {
         className="space-y-6 sm:grid sm:grid-cols-2 sm:space-y-0 sm:gap-6 md:grid-cols-3"
       >
         {isLoading &&
-          [0, 1, 2, 3, 4, 5].map((index) => (
+          Array.from({ length: 6 }).map((_, index) => (
             <ProjectCardSkeleton key={index} />
           ))}
         {!isLoading &&
